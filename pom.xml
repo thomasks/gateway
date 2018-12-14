@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.freeexchange</groupId>
+  <artifactId>gateway</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>gateway-web</module>
+  	<module>gateway-domain</module>
+  	<module>gateway-dto</module>
+  	<module>gateway-service</module>
+  </modules>
+  
+  
+   <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.3.RELEASE</version>
+		<relativePath/>
+	</parent>
+  
+  
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<project.version>0.0.1-SNAPSHOT</project.version>
+		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+		<cloud-admin.version>2.0.1</cloud-admin.version>
+		<gateway.version>0.0.1-SNAPSHOT</gateway.version>
+		<lombok.version>1.16.22</lombok.version>
+		<fastjson.version>1.2.15</fastjson.version>
+		<common-base.version>0.0.1-SNAPSHOT</common-base.version>
+		<commons-codec.version>1.11</commons-codec.version>
+		<member.version>0.0.1-SNAPSHOT</member.version>
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+			
+			<dependency>
+				<groupId>cn.freeexchange</groupId>
+				<artifactId>common-base</artifactId>
+				<version>${common-base.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>cn.freeexchange</groupId>
+				<artifactId>gateway-dto</artifactId>
+				<version>${gateway.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>cn.freeexchange</groupId>
+				<artifactId>member-dto</artifactId>
+				<version>${member.version}</version>
+			</dependency>
+			
+			
+			<dependency>
+				<groupId>cn.freeexchange</groupId>
+				<artifactId>gateway-domain</artifactId>
+				<version>${gateway.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>cn.freeexchange</groupId>
+				<artifactId>gateway-service</artifactId>
+				<version>${gateway.version}</version>
+			</dependency>
+			
+			<dependency>
+		   		<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+			
+			
+			<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+			<dependency>
+			    <groupId>commons-codec</groupId>
+			    <artifactId>commons-codec</artifactId>
+			    <version>${commons-codec.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+			</dependency>
+			
+			
+			
+		</dependencies>
+	
+	</dependencyManagement>
+  
+  
+</project>

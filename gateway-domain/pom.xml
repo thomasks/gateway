@@ -30,11 +30,6 @@
     </dependency>
     
     <dependency>
-    	<groupId>cn.freeexchange</groupId>
-    	<artifactId>member-dto</artifactId>
-    </dependency>
-    
-    <dependency>
 		<groupId>com.alibaba</groupId>
 		<artifactId>fastjson</artifactId>
 	</dependency>

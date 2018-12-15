@@ -33,6 +33,7 @@
 		<common-base.version>0.0.1-SNAPSHOT</common-base.version>
 		<commons-codec.version>1.11</commons-codec.version>
 		<member.version>0.0.1-SNAPSHOT</member.version>
+		<version.mysql>6.0.6</version.mysql>
 	</properties>
 	
 	<dependencyManagement>
@@ -96,6 +97,11 @@
 				<version>${lombok.version}</version>
 			</dependency>
 			
+			 <dependency>
+		    	<groupId>mysql</groupId>
+		    	<artifactId>mysql-connector-java</artifactId>
+		    	<version>${version.mysql}</version>
+			</dependency>
 			
 			
 		</dependencies>

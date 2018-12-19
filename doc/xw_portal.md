@@ -294,7 +294,7 @@
 	    ]
 	}
 
-## 卡包信息概览 暂不实现 ##
+## 卡包信息概览 ##
 ### 描述 ###
 	卡包信息
 
@@ -314,10 +314,18 @@
 | responseCode | 应答码 | String | Y |
 | responseMsg | 应答信息 | String | Y |
 | data | 业务数据 | JSON | Y |
-| data.cardNum | 卡数量 | List | Y |
-| data.couponNum | 券数量 | String | Y |
+| data.cardNum | 卡数量 | Long | Y |
+| data.couponNum | 券数量 | Long | Y |
 
-
+### 响应报文示例 ###
+	{
+	    "responseCode": "000",
+	    "responseMsg": "成功",
+	    "data": {
+	        "cardNum": 1,
+	        "couponNum": 2
+	    }
+	}
 
 ## 卡列表##
 ### 描述 ###
